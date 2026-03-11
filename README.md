@@ -38,7 +38,7 @@ Monitoramento ativo via GPS e sensores de comportamento.
 * **Cerca Eletrônica (Geofencing):** Notificações imediatas para saídas de perímetro permitido ou entrada em zonas de risco.
 
 ---
-
+<!-- 
 ## Guia de Configuração
 
 ### Pré-requisitos
@@ -59,3 +59,5 @@ cp .env.example .env
 
 # 4. Suba os containers
 docker-compose up -d
+
+--!>
