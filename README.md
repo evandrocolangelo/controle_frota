@@ -1,18 +1,17 @@
 # producao
 RPO de Produção
 
-# 🚛 Fleet Intelligence System (Gestão de Frota)
+# Gestão de Frota
 
 ![Build Status](https://img.shields.io/badge/build-passing-brightgreen?style=for-the-badge)
-![Version](https://img.shields.io/badge/version-1.2.0-blue?style=for-the-badge)
+![Version](https://img.shields.io/badge/version-1.0.0-blue?style=for-the-badge)
 ![MySQL](https://img.shields.io/badge/MySQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 
 > Solução robusta para centralização de dados veiculares, conformidade de condutores e monitoramento de telemetria em tempo real.
 
 ---
 
-## 📋 Módulos Core
+## Módulos Core
 
 ### 1. Gestão de Ativos e Documentação
 Centralização técnica e jurídica para evitar multas administrativas.
@@ -40,7 +39,7 @@ Monitoramento ativo via GPS e sensores de comportamento.
 
 ---
 
-## 🚀 Guia de Configuração
+## Guia de Configuração
 
 ### Pré-requisitos
 * **Docker & Docker Compose**
