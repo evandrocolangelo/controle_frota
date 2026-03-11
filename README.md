@@ -5,9 +5,7 @@ RPO de Produção
 
 ![Build Status](https://img.shields.io/badge/build-passing-brightgreen?style=for-the-badge)
 ![Version](https://img.shields.io/badge/version-1.2.0-blue?style=for-the-badge)
-![License](https://img.shields.io/badge/license-MIT-important?style=for-the-badge)
-![NodeJS](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 
 > Solução robusta para centralização de dados veiculares, conformidade de condutores e monitoramento de telemetria em tempo real.
