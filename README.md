@@ -107,8 +107,43 @@ Diagrama de Casos de Uso
 Diagrama de Estado
 
 ![Tela 2](estado.png)
-*texto do diagrama aqui*
+*Diagrama de Estado*
 
+#### 1. Fluxo de Uso Principal (Estados Verdes)
+* **Disponível (Status):** O ponto de partida (marcado com um asterisco). O veículo está pronto para ser utilizado.
+
+* **Reservado:** Ocorre quando um condutor solicita a reserva pelo aplicativo.
+
+* **Transição de retorno:** A reserva pode ser rejeitada ou cancelada, voltando o veículo para o estado Disponível.
+
+* **Em Uso:** O veículo entra neste estado após o checkout e liberação pelo condutor/app.
+
+* **Finalização:** Quando a viagem é encerrada (Check-in), o veículo retorna ao estado Disponível.
+
+#### 2. Bloqueios e Manutenção (Estados Laranjas)
+* **Bloqueado (Status):** O veículo é impedido de uso por dois motivos principais:
+
+* **Alerta Preventivo de KM:** Gatilho automático ao atingir 8.500km (Módulo de Manutenção).
+
+* **Checkout com Alertas:** Quando o condutor identifica algo irregular no início da viagem.
+
+* **Em Manutenção:** O veículo transita para este estado para realização de serviços (ex: troca de óleo, pneus).
+
+#### 3. Pendências Críticas (Estados Vermelhos)
+* **Pendência Crítica (M1):** O veículo é movido diretamente de Disponível para este estado se houver vencimento de documentos (Módulo de Ativos).
+
+* **Pendência Crítica (Sinalizado com ponto vermelho):** Ocorre em duas situações:
+
+* **Detectado Falha Crítica:** Via telemetria enquanto o veículo está Em Uso.
+
+* **Manutenção Concluída:** Após o serviço, o veículo passa por este estágio de validação de pendência antes de retornar ao fluxo normal.
+
+#### Resumo das Transições de Recuperação
+Para que o veículo volte a ficar Disponível, ele deve seguir caminhos de regularização:
+
+* **Regularizar Documentação:** Move o veículo da Pendência Crítica para o estado Disponível.
+
+* **Finalização de Viagem/Check-in:** Retorna o veículo do uso para a disponibilidade.
 
 
 Diagrama de Sequência
