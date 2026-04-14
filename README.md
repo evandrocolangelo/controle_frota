@@ -82,7 +82,16 @@ Diagrama de Estado
 Diagrama de Sequência
 
 ![Tela 3](sequencia.png)
-*Análise de TCO e preventivas*
+
+Valida o fluxo mais complexo do sistema: a reserva e liberação de um veículo. Ele demonstra como os diferentes módulos interagem em tempo real e como as validações técnicas e de telemetria são aplicadas:
+
+Validações Iniciais: O processo começa com o Condutor solicitando a reserva ao App. O sistema consulta imediatamente os módulos de Ativos (M1) e Manutenção (M3) para verificar a CNH (Categoria D Regular), a quilometragem para a próxima revisão (ex: 8.500 km) e o status do IPVA/Licenciamento.
+
+Alertas e Pré-Aprovação: Como o IPVA e a manutenção estão próximos (em amarelo), o sistema emite alertas preventivos antes de pré-aprovar a reserva.
+
+Checklist e Liberação: Na fase de checkout, o condutor envia o Checklist Digital com fotos e valida o Odômetro Inicial (ex: 25.102 km).
+
+Monitoramento Ativo: Somente após a liberação do veículo, o sistema envia o comando para o módulo de Telemetria & GPS (M4) iniciar o rastreamento em tempo real.
 
 ---
 
