@@ -38,7 +38,23 @@ Monitoramento ativo via GPS e sensores de comportamento.
 * **Cerca Eletrônica (Geofencing):** Notificações imediatas para saídas de perímetro permitido ou entrada em zonas de risco.
 
 ---
-<!-- 
+
+## TELAS
+
+### Interface do Sistema
+
+| Gestão de Ativos e Documentação | Controle Operacional (Web) |
+| :---: | :---: |
+| ![Tela 1](1.jpg) | ![Tela 2](2.jpg) |
+| *Centralização de dados e alertas de CNH/IPVA* | *Checklist digital e travas de agendamento* |
+
+| Custos e Manutenção | Telemetria em Tempo Real |
+| :---: | :---: |
+| ![Tela 3](3.jpg) | ![Tela 4](4.jpg) |
+| *Análise de TCO e preventivas* | *Monitoramento GPS e comportamento do condutor* |
+
+---
+
 ## Guia de Configuração
 
 ### Pré-requisitos
@@ -59,5 +75,3 @@ cp .env.example .env
 
 # 4. Suba os containers
 docker-compose up -d
-
---!>
