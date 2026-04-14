@@ -49,16 +49,40 @@ Gestão de Ativos e Documentação
 *Centralização de dados e alertas de CNH/IPVA*
 
 Controle Operacional
+
 ![Tela 2](2.png)
 *Checklist digital e travas de agendamento*
 
 Custos e Manutenção 
+
 ![Tela 3](3.png)
 *Análise de TCO e preventivas*
 
 Telemetria em Tempo Real
+
 ![Tela 4](4.png) 
 *Monitoramento GPS e comportamento do condutor*
+
+---
+
+## Diagramas
+
+### Diagramas do Sistema
+
+Diagrama de Casoso de Uso
+
+![Tela 1](casos_de_uso.png)  
+*Centralização de dados e alertas de CNH/IPVA*
+
+Diagrama de Estado
+
+![Tela 2](estado.png)
+*Checklist digital e travas de agendamento*
+
+Diagrama de Sequência
+
+![Tela 3](sequencia.png)
+*Análise de TCO e preventivas*
 
 ---
 
