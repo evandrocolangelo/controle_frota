@@ -85,30 +85,24 @@ Diagrama de Casos de Uso
   O retângulo grande rotulado como "Sistema de Gestão de Frota" define o que faz parte do seu software. Tudo o que está dentro dele são funcionalidades que precisam ser desenvolvidas.
 
 #### 3. As Funcionalidades e Relacionamentos
-  As elipses são as tarefas. O ponto chave aqui são as setas especiais:
+* **Os Relacionamentos <<include>> (Obrigatórios):** Isso significa que uma tarefa depende necessariamente da outra.
 
-  Os Relacionamentos <<include>> (Obrigatórios)
-  Isso significa que uma tarefa depende necessariamente da outra.
+* **Executar Checklist ➔ Validar Fotos:** O motorista não consegue finalizar o checklist se não tirar as fotos obrigatórias. Uma ação "chama" a outra.
 
-  Executar Checklist ➔ Validar Fotos: O motorista não consegue finalizar o checklist se não tirar as fotos obrigatórias. Uma ação "chama" a outra.
+* **Analisar Status ➔ Visualizar Alertas:** Para o Gestor ver um alerta, o sistema obrigatoriamente tem que ter feito a análise de "Status Amarelo/Vermelho" (ex: IPVA vencendo em 3 dias).
 
-  Analisar Status ➔ Visualizar Alertas: Para o Gestor ver um alerta, o sistema obrigatoriamente tem que ter feito a análise de "Status Amarelo/Vermelho" (ex: IPVA vencendo em 3 dias).
+* **O Relacionamento <<extend>> (Opcional/Condicional):** Este é o mais importante para a sua "Trava Automática".
 
-  O Relacionamento <<extend>> (Opcional/Condicional)
-Este é o mais importante para a sua "Trava Automática".
+* **Monitorar KM ➔ Bloquear Veículo:** O bloqueio não acontece sempre. Ele é uma "extensão" que só ocorre se uma condição for atendida (ex: o KM passou de 10.000 km).
 
-  Monitorar KM ➔ Bloquear Veículo: O bloqueio não acontece sempre. Ele é uma "extensão" que só ocorre se uma condição for atendida (ex: o KM passou de 10.000 km).
+#### 4. Mapeamento por Módulos (Cores e Siglas)
+* **M1 (Gestão de Ativos):** Validar CNH, verificar documentação, gerenciar condutores.
 
-4. Mapeamento por Módulos (Cores e Siglas)
-No diagrama, os casos de uso estão identificados para corresponder aos seus módulos:
+* **M2 (Controle Operacional):** Realizar reserva, checklist digital, odômetro.
 
-M1 (Gestão de Ativos): Validar CNH, verificar documentação, gerenciar condutores.
+* **M3 (Custos e Manutenção):** Analisar TCO, verificar abastecimento, alertas de manutenção.
 
-M2 (Controle Operacional): Realizar reserva, checklist digital, odômetro.
-
-M3 (Custos e Manutenção): Analisar TCO, verificar abastecimento, alertas de manutenção.
-
-M4 (Telemetria): Monitorar localização, detectar frenagens, configurar geofencing.
+* **M4 (Telemetria):** Monitorar localização, detectar frenagens, configurar geofencing.
 
 Diagrama de Estado
 
