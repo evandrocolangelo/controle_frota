@@ -11,7 +11,7 @@
 
 ---
 
-## Módulos Core
+## Módulos
 
 ### 1. Gestão de Ativos e Documentação
 Centralização técnica e jurídica para evitar multas administrativas.
