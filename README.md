@@ -69,7 +69,7 @@ Telemetria em Tempo Real
 
 ### Diagramas do Sistema
 
-Diagrama de Casoso de Uso
+Diagrama de Casos de Uso
 
 ![Tela 1](casos_de_uso.png)  
 *Centralização de dados e alertas de CNH/IPVA*
