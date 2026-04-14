@@ -45,12 +45,12 @@ Monitoramento ativo via GPS e sensores de comportamento.
 
 | Gestão de Ativos e Documentação | Controle Operacional (Web) |
 | :---: | :---: |
-| ![Tela 1](1.png) | ![Tela 2](2.jpg) |
+| ![Tela 1](1.png) | ![Tela 2](2.png) |
 | *Centralização de dados e alertas de CNH/IPVA* | *Checklist digital e travas de agendamento* |
 
 | Custos e Manutenção | Telemetria em Tempo Real |
 | :---: | :---: |
-| ![Tela 3](3.jpg) | ![Tela 4](4.jpg) |
+| ![Tela 3](3.png) | ![Tela 4](4.png) |
 | *Análise de TCO e preventivas* | *Monitoramento GPS e comportamento do condutor* |
 
 ---
