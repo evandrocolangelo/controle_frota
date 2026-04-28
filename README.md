@@ -261,7 +261,7 @@ Critérios de Aceite: Relatório de "Ranking de Motoristas" baseado na severidad
 ### Pré-requisitos
 * **Docker & Docker Compose**
 * **Chave de API** (Google Maps ou Mapbox para o dashboard)
-* **PostgreSQL 14+**
+* **MySQL 8+**
 
 ### Instalação Rápida
 ```bash
