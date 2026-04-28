@@ -194,7 +194,7 @@ Diagrama de Sequência
 
 ## User Stories (Cards de História)
 
-### Gestão de Ativos e Documentação+
+### Gestão de Ativos e Documentação
 
 * **US01 –** Cadastro de Veículo
 História: Como Gestor de Frota, eu quero cadastrar os detalhes técnicos dos veículos (Placa, Chassi, RENAVAM) para manter um inventário centralizado e organizado.
