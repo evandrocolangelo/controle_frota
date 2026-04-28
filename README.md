@@ -150,18 +150,47 @@ Diagrama de Sequência
 
 ![Tela 3](sequencia.png)
 
-Valida o fluxo mais complexo do sistema: a reserva e liberação de um veículo. Ele demonstra como os diferentes módulos interagem em tempo real e como as validações técnicas e de telemetria são aplicadas:
+**A reserva e liberação de um veículo:**  Ele demonstra como os diferentes módulos interagem em tempo real e como as validações técnicas e de telemetria são aplicadas:
 
-Validações Iniciais: O processo começa com o Condutor solicitando a reserva ao App. O sistema consulta imediatamente os módulos de Ativos (M1) e Manutenção (M3) para verificar a CNH (Categoria D Regular), a quilometragem para a próxima revisão (ex: 8.500 km) e o status do IPVA/Licenciamento.
+* **Validações Iniciais:** O processo começa com o Condutor solicitando a reserva ao App. O sistema consulta imediatamente os módulos de Ativos (M1) e Manutenção (M3) para verificar a CNH (Categoria D Regular), a quilometragem para a próxima revisão (ex: 8.500 km) e o status do IPVA/Licenciamento.
 
-Alertas e Pré-Aprovação: Como o IPVA e a manutenção estão próximos (em amarelo), o sistema emite alertas preventivos antes de pré-aprovar a reserva.
+* **Alertas e Pré-Aprovação:** Como o IPVA e a manutenção estão próximos (em amarelo), o sistema emite alertas preventivos antes de pré-aprovar a reserva.
 
-Checklist e Liberação: Na fase de checkout, o condutor envia o Checklist Digital com fotos e valida o Odômetro Inicial (ex: 25.102 km).
+* **Checklist e Liberação:** Na fase de checkout, o condutor envia o Checklist Digital com fotos e valida o Odômetro Inicial (ex: 25.102 km).
 
-Monitoramento Ativo: Somente após a liberação do veículo, o sistema envia o comando para o módulo de Telemetria & GPS (M4) iniciar o rastreamento em tempo real.
+* **Monitoramento Ativo:** Somente após a liberação do veículo, o sistema envia o comando para o módulo de Telemetria & GPS (M4) iniciar o rastreamento em tempo real.
 
 ---
 
+## Requisitos Funcionais (RF)
+
+* **RF01 -** Cadastro de Veículos: O sistema deve permitir o registro completo de veículos (placa, modelo, ano, chassi, tipo de combustível e vencimento do licenciamento).
+
+* **RF02 -** Gestão de Condutores: O sistema deve permitir o cadastro de motoristas, vinculando sua CNH e categoria à validade do documento.
+
+* **RF03 -** Controle de Manutenção: O sistema deve permitir o agendamento de manutenções preventivas e o registro de manutenções corretivas, incluindo custos e peças trocadas.
+
+* **RF04 -** Monitoramento de Telemetria: O sistema deve capturar e exibir em tempo real a localização (GPS), velocidade e consumo de combustível dos veículos.
+
+* **RF05 -** Controle de Abastecimento: O sistema deve registrar cada evento de abastecimento, permitindo o cálculo automático de km/litro.
+
+* **RF06 -** Gestão de Sinistros e Multas: O sistema deve permitir o registro de infrações de trânsito e acidentes, vinculando-os ao condutor responsável.
+
+## Requisitos Não Funcionais (RNF)
+
+* **RNF01 -** Disponibilidade: O sistema deve estar disponível para acesso via web e mobile 24/7, com um tempo de atividade (uptime) de 99,8%.
+
+* **RNF02 -** Desempenho (Latência): O tempo de resposta para a atualização da posição de um veículo no mapa não deve exceder 5 segundos.
+
+* **RNF03 -** Segurança de Dados: O acesso ao sistema deve ser controlado por níveis de permissão (ex: Administrador, Gestor, Motorista) e os dados devem ser transmitidos via protocolo HTTPS.
+
+* **RNF04 -** Escalabilidade: O banco de dados deve ser capaz de suportar o crescimento da frota de 100 para até 10.000 veículos sem perda de performance.
+
+* **RNF05 -** Offline (Mobile): O aplicativo mobile deve permitir o registro de vistorias mesmo sem conexão com a internet, sincronizando os dados assim que o sinal for restabelecido.
+
+* **RNF06 -** Integridade: O sistema deve manter um log (trilha de auditoria) de todas as alterações feitas nos registros de documentos e multas.
+
+---
 ## Guia de Configuração
 
 ### Pré-requisitos
