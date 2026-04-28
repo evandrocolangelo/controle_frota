@@ -196,51 +196,64 @@ Diagrama de Sequência
 
 ### Gestão de Ativos e Documentação
 
-* **US01 –** Cadastro de Veículo
+* **US01 – Cadastro de Veículo**
+
 História: Como Gestor de Frota, eu quero cadastrar os detalhes técnicos dos veículos (Placa, Chassi, RENAVAM) para manter um inventário centralizado e organizado.
-Critérios de Aceite: * Campos obrigatórios validados (ex: Placa no formato Mercosul).
+
+Critérios de Aceite: Campos obrigatórios validados (ex: Placa no formato Mercosul).
+
 Opção de upload de foto do veículo.
 
 * **US02 –** Alerta de Vencimentos
+  
 História: Como Gestor de Frota, eu quero receber notificações preditivas sobre o vencimento de IPVA e Seguros para evitar multas administrativas e circulação irregular.
-Critérios de Aceite:
-Configuração de antecedência do alerta (ex: 30, 15 e 5 dias).
+
+Critérios de Aceite: Configuração de antecedência do alerta (ex: 30, 15 e 5 dias).
+
 Dashboard visual com status "Em dia", "A vencer" e "Vencido".
 
 ### Controle Operacional e Reservas
 * **US03 –** Checklist Obrigatório
+
 História: Como Motorista, eu quero realizar um checklist digital pelo app antes de iniciar uma rota para garantir que o veículo está em condições seguras de uso.
-Critérios de Aceite:
-Impedir a finalização da reserva se itens críticos (freios/pneus) forem reprovados.
+
+Critérios de Aceite: Impedir a finalização da reserva se itens críticos (freios/pneus) forem reprovados.
+
 Possibilidade de anexar fotos de avarias encontradas.
 
 * **US04 –** Trava de Segurança em Reservas
+
 História: Como Sistema, quero bloquear automaticamente a reserva de veículos em manutenção para que motoristas não utilizem ativos em estado crítico.
-Critérios de Aceite:
-O veículo deve aparecer como "Indisponível" no calendário de agendamento.
+
+Critérios de Aceite: O veículo deve aparecer como "Indisponível" no calendário de agendamento.
 
 ### Custos e Manutenção
 * **US05 –** Manutenção por KM
+
 História: Como Gestor de Manutenção, eu quero que o sistema dispare ordens de serviço automáticas baseadas no odômetro para garantir que a troca de óleo e filtros ocorra no prazo correto.
-Critérios de Aceite:
-Integração entre o odômetro registrado e o plano de manutenção preventiva.
+
+Critérios de Aceite: Integração entre o odômetro registrado e o plano de manutenção preventiva.
 
 * **US06 –** Cálculo de Eficiência (Km/L)
+
 História: Como Analista de Custos, eu quero visualizar a média de consumo por veículo para identificar desperdícios ou necessidade de manutenção corretiva.
-Critérios de Aceite:
-Cálculo automático baseado na diferença de odômetro entre dois abastecimentos.
+
+Critérios de Aceite: Cálculo automático baseado na diferença de odômetro entre dois abastecimentos.
 
 ### Telemetria e Segurança
 * **US07 –** Cerca Eletrônica (Geofencing)
+
 História: Como Gestor de Segurança, eu quero delimitar áreas permitidas de circulação para receber alertas imediatos caso um veículo entre em zona de risco ou saia da rota prevista.
-Critérios de Aceite:
-Desenho de polígonos no mapa via interface web.
+
+Critérios de Aceite: Desenho de polígonos no mapa via interface web.
+
 Notificação push/e-mail em tempo real no momento da violação.
 
 * **US08 – Ranking de Comportamento**
+
 História: Como Gestor de RH/Frota, eu quero monitorar eventos de frenagem brusca e excesso de velocidade para pontuar os motoristas e promover treinamentos de direção defensiva.
-Critérios de Aceite:
-Relatório de "Ranking de Motoristas" baseado na severidade dos alertas de telemetria.
+
+Critérios de Aceite: Relatório de "Ranking de Motoristas" baseado na severidade dos alertas de telemetria.
 
 ---
 ## Guia de Configuração
