@@ -237,7 +237,7 @@ Critérios de Aceite:
 Desenho de polígonos no mapa via interface web.
 Notificação push/e-mail em tempo real no momento da violação.
 
-* **US08 –** Ranking de Comportamento
+* **US08 – Ranking de Comportamento**
 História: Como Gestor de RH/Frota, eu quero monitorar eventos de frenagem brusca e excesso de velocidade para pontuar os motoristas e promover treinamentos de direção defensiva.
 Critérios de Aceite:
 Relatório de "Ranking de Motoristas" baseado na severidade dos alertas de telemetria.
